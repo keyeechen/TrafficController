@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">黑米流量助手</string>
+    <string name="action_settings">设置</string>
+    <string name="traffic_match">流量校正</string>
+    <string name="traffic_matching">流量校正中...</string>
+    <string name="query_result">查询结果:</string>
+    <string name="traffic_used">已用流量:</string>
+    <string name="traffic_left">剩余流量:</string>
+    <string name="traffic_ranking_text">流量排行</string>
+
+</resources>
