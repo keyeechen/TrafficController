@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dip"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_icon"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="黑米"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/tv_app_progress"
+        style="@style/self_define_ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_app_progress"
+        android:layout_below="@id/tv_app_name"
+        android:layout_width="180dip"
+        android:layout_toRightOf="@id/iv_icon"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="400k"
+        android:id="@+id/tv_traffic_num"
+        android:layout_marginLeft="5dip"
+        android:layout_alignTop="@id/tv_app_progress"
+        android:layout_toRightOf="@id/tv_app_progress"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

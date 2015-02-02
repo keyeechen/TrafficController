@@ -56,7 +56,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"
                     android:gravity="center_vertical"
-                    android:text="已用\nMB"
+                    android:text="@string/text_used_mb"
                     android:textColor="@android:color/white"
                     android:textSize="10dp" />
 
@@ -68,7 +68,6 @@
                     android:layout_alignTop="@id/tv_data_traffic_used_txt"
                     android:layout_toLeftOf="@id/tv_data_traffic_used_txt"
                     android:gravity="center_vertical"
-                    android:text="330"
                     android:textColor="@android:color/white"
                     android:textSize="20dip" />
             </RelativeLayout>
@@ -91,7 +90,6 @@
                     android:layout_alignParentLeft="true"
                     android:layout_marginLeft="2dp"
                     android:gravity="center_vertical"
-                    android:text="250"
                     android:textColor="@android:color/white"
                     android:textSize="20dp" />
 
@@ -104,7 +102,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@id/tv_data_traffic_left_number"
                     android:gravity="center_vertical"
-                    android:text="剩余\nMB"
+                    android:text="@string/text_left_mb"
                     android:textColor="@android:color/white"
                     android:textSize="10dp" />
             </RelativeLayout>

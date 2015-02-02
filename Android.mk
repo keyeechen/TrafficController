@@ -33,11 +33,11 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src) \
 LOCAL_SDK_VERSION := current
 
 # Also link against our own custom library.
-LOCAL_JAVA_LIBRARIES :=
-
+LOCAL_JAVA_LIBRARIES :=framework-base 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-    android-support-v4 \
-
+android-support-v4 \
+# frank  \  
+#LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := frank:framework.jar frank:settings.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_PROGUARD_ENABLED := disabled
 

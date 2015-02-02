@@ -15,16 +15,16 @@ import android.widget.TextView;
 
 import com.heimi.traffic.R;
 import com.heimi.traffic.bean.AppInfo;
-import com.heimi.traffic.utils.TraffficUtils;
+import com.heimi.traffic.utils.TrafficUtils;
 
 /**
- * 每个app的流量消耗列表界面：fragment
+ * 每个app的流量消耗列表界面：frag
  * 
  * @author sa
  * 
  */
 public class AppTrafficListFragment extends Fragment {
-	private TextView tv                     ;
+	private TextView tv  ;
 	private PackageManager pm;
 	private List<PackageInfo> packages;
 	private ArrayList<AppInfo> appList = new ArrayList<AppInfo>(); 
@@ -45,12 +45,6 @@ public class AppTrafficListFragment extends Fragment {
 		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
 		init();
-//		tv = (TextView) getActivity().findViewById(R.id.tv);
-//        for(int i=0;i<1;i++)
-//        {
-//        	tv.append(appList.get(i).getAppName()+"received:"+TraffficUtils.getReceivedMobileTrafficByUid(appList.get(i).getUid(), getActivity())+"\n");
-//        	tv.append(appList.get(i).getAppName()+"sent:"+TraffficUtils.getSentMobileTrafficByUid(appList.get(i).getUid(), getActivity())+"\n");
-//        }
 	}
 
 	/**

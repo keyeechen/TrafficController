@@ -38,15 +38,22 @@ public interface Constants {
 	String SMS_LOCAL_LEFT_TRAFFIC = "sms_local_left_traffic";// 本地剩余流量
 	String SMS_NATIONAL_USED_TRAFFIC = "sms_national_used_traffic";// 全国使用流量
 	String SMS_NATIONAL_LEFT_TRAFFIC = "sms_national_left_traffic";// 全国剩余流量
-	String SMS_QUERY_RESPONSE = "smSendSucessForQueryTrafficFlag";// query
+	String SMS_QUERY_RESPONSE = "SmsSendSuccessForQueryTrafficFlag";// query
 																  // result
 	String SMS_QUERY_RESPONSE_OK = "success";
 	String SMS_QUERY_RESPONSE_FAIL = "failure";
+	String SMS_QUERYTRAFFIC_KEY = "com.android.mms.query.objecttran.key";
+
 	// Context hiden Constants
 	String NETWORKMANAGEMENT_SERVICE = "network_management";
 	/** {@hide} */
 	String NETWORK_STATS_SERVICE = "netstats";
 	/** {@hide} */
 	String NETWORK_POLICY_SERVICE = "netpolicy";
-
+	//SharedPreferences
+	String PREF_TRAFFIC_PREFIX = "heimi_traffic_";
+	long KB_UNIT=1024;
+    long MB_UNIT=KB_UNIT*KB_UNIT;
+    long GB_UNIT=KB_UNIT*MB_UNIT;
+    float  DEFAULT_TRAFFIC_NUM=3.5f;//以3.5G流量为默认值
 }

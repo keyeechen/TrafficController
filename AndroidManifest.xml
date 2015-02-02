@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    coreApp="true"
     package="com.heimi.traffic"
+    android:sharedUserId="android.uid.system"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -8,10 +10,13 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="19" />
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/app_name" 
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.heimi.traffic.ui.MainActivity"
@@ -39,10 +44,16 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.heimi.traffic.receiver.SmsTrafficQueryReceiver" >
-            <action android:name="android.provider.sms.SENDCONTEX_SMSQUERYTRAFFIC" >
-            </action>
+        <receiver
+            android:name="com.heimi.traffic.receiver.BootReceiver"
+            android:process=":push" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
         </receiver>
+
+        <service android:name="com.heimi.traffic.service.BackService" android:process=":push">
+        </service>
     </application>
 
 </manifest>

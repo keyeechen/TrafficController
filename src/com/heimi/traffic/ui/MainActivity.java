@@ -1,8 +1,8 @@
 package com.heimi.traffic.ui;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -19,10 +19,10 @@ public class MainActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
+		FragmentTransaction transaction=getFragmentManager().beginTransaction();
 		MainFragment mainFragment=new MainFragment();
 		transaction.add(R.id.main_container, mainFragment);
-//		transaction.addToBackStack(null);
+		transaction.addToBackStack(null);
 		transaction.commit();
 		
 	}

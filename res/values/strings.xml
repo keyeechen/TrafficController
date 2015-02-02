@@ -9,5 +9,8 @@
     <string name="traffic_used">已用流量:</string>
     <string name="traffic_left">剩余流量:</string>
     <string name="traffic_ranking_text">流量排行</string>
+    <string name="text_used_mb">已用\n%1$s</string>
+    <string name="text_left_mb">剩余\n%1$s</string>
+    <string name="text_traffic_match_failed">流量校正失败</string>
 
 </resources>
